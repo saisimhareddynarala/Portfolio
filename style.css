@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #6a1b9a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Animations */
+.fade-in {
+  animation: fade 1.5s ease-in;
+}
+
+.slide-in {
+  animation: slide 1.5s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Main */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #6a1b9a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #6a1b9a;
+  display: inline-block;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Projects */
+.project-card {
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
+}
