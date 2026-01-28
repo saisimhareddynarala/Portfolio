@@ -131,6 +131,9 @@ ul {
 .gallery img:hover {
   transform: scale(1.1);
 }
+a {
+  text-decoration: none;
+}
 
 /* Footer */
 footer {
