@@ -142,3 +142,60 @@ footer {
   background: #eee;
   margin-top: 2rem;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: reveal 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.delay-2 {
+  animation-delay: 0.8s;
+}
+
+@keyframes reveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+/* Floating circles */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape1 {
+  width: 120px;
+  height: 120px;
+  top: 20%;
+  left: 10%;
+}
+
+.shape2 {
+  width: 80px;
+  height: 80px;
+  bottom: 15%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
