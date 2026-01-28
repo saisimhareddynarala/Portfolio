@@ -191,11 +191,11 @@ footer {
   height: 80px;
   bottom: 15%;
   right: 15%;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+  0% { transform: translateY(10px); }
+  75% { transform: translateY(-20px); }
+  100% { transform: translateY(10px); }
 }
